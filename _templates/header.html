@@ -1,18 +1,8 @@
-<!doctype html>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=400">
-<link href="style.css" rel="stylesheet" />
-<link rel='shortcut icon' type='image/x-icon' href='phoenix.ico' />
-<title>About us | PhoenixTales</title>
+{% include header-meta.html %}
+<title>{{page.title}} | {{site.title}}</title>
 
-<body id="subpage" class="bird">
+<body id="subpage" class="{{page.bodyClass}}">
 
-  <nav>
-    <a href="/"><div class="start hide-text">Main</div></a>
-    <ul>
-      <li><a href="news.html">News</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="about.html">About us</a></li>
-      <li><a href="contrib.html">Contrib</a></li>
-    </ul>
-  </nav>
+  {% include menu.html %}
+
+  <main class="{{page.mainClass}}" lang="en">
