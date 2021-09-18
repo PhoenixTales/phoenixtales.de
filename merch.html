@@ -77,13 +77,16 @@
 		align-items: center	;
 	}
 
-	.products > img {
+	.products > a {
 		flex-grow: 1;
 		margin: 25px;
-    	max-width: 100%;
-		height: 300px;
+		display: flex;
+	}
+
+	.products > a > img {
 		object-fit: cover;
-    	cursor: pointer;
+		flex-grow: 1;
+		height: 300px;
 	}
 
 	@media (max-width: 900px) {
@@ -126,7 +129,7 @@
 		.menu > a {
 			margin: 0 20px;
 		}
-		.products > img {
+		.products > a {
 			margin: calc(4vw + -11px) calc(5vw - 20px);
 		}
 	}
@@ -149,23 +152,16 @@
 	</nav>
 
 	<div class="products">
-		<img src="/specials/logo/themutt.png">
-		<img src="/specials/logo/src/vogelausgeschnitten.png">
-		<img src="/specials/logo/unused/peafowl.png">
-		<img src="/specials/logo/unused/phoenix2.png">
-		<img src="/specials/logo/unused/phoenix7.png">
-		<img src="/specials/logo/unused/phoenix8.jpg">
-		<img src="/specials/logo/unused/simurgh2.jpg">
-		<img src="/specials/logo/unused/suns.jpg">
-		<img src="/specials/logo/used/thefox.jpg">
-		<img src="/specials/logo/used/thewolf.png">
-		<img src="/specials/logo/simurgh.jpg">
+		<a href="merch/item1"><img src="/specials/logo/themutt.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/src/vogelausgeschnitten.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/peafowl.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/phoenix2.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/phoenix7.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/phoenix8.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/simurgh2.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/suns.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/used/thefox.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/used/thewolf.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/simurgh.jpg"></a>
 	</div>
 </div>
-
-<script>
-	for (var img of Array.from(document.querySelectorAll(".products > img"))) {
-		const src = img.src;
-		img.onclick = () => document.location = src;
-	}
-</script>
