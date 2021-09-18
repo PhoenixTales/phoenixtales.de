@@ -34,7 +34,7 @@
 	.main {
 		max-width: 1200px;
 		min-width: 400px;
-    	padding: 0 35px 35px 35px;
+		padding: 0 35px 35px 35px;
 	}
 
 	.team-logo {
@@ -83,6 +83,7 @@
     	max-width: 100%;
 		height: 300px;
 		object-fit: cover;
+    	cursor: pointer;
 	}
 
 	@media (max-width: 900px) {
@@ -91,13 +92,13 @@
 		}
 		body {
 			flex-direction: column;
-			min-width: 400px;
+			min-width: 320px;
 		}
 		.sidebar {
 			width: 100%;
 			border: none;
 			position: relative;
-			top: 25px;
+			margin-top: 25px;
 		}
 		.team-logo {
 			position: relative;
@@ -108,9 +109,22 @@
 		}
 		.main {
 			padding: 0;
+			max-width: 100vw;
+			overflow: hidden;
+			display: block;
+			min-width: 100%;
 		}
 		.menu {
 			text-align: center;
+			max-width: 100%;
+			line-height: 40px;
+			padding: 20px 15px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		.menu > a {
+			margin: 0 20px;
 		}
 		.products > img {
 			margin: calc(4vw + -11px) calc(5vw - 20px);
@@ -148,3 +162,10 @@
 		<img src="/specials/logo/simurgh.jpg">
 	</div>
 </div>
+
+<script>
+	for (var img of Array.from(document.querySelectorAll(".products > img"))) {
+		const src = img.src;
+		img.onclick = () => document.location = src;
+	}
+</script>
