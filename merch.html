@@ -4,7 +4,7 @@
 <title>Store | PhoenixTales</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
-<link href="/favicon.ico" rel="icon"/>
+<link href="/phoenix.ico" rel="icon"/>
 
 <style>
 	* {
@@ -29,7 +29,6 @@
 		flex-direction: column;
 		align-items: center;
 		flex-shrink: 0;
-		padding-top: 100px;
 		border-right: 2px solid #0e0e0e;
 	}
 	.main {
@@ -86,6 +85,38 @@
 		max-height: 300px;
 		width: 100%;
 		object-fit: cover;
+	}
+
+	@media (max-width: 900px) {
+		:root {
+			overflow-x: auto;
+		}
+		body {
+			flex-direction: column;
+			min-width: 400px;
+		}
+		.sidebar {
+			width: 100%;
+			border: none;
+			position: relative;
+			top: 25px;
+		}
+		.team-logo {
+			position: relative;
+			top: 0;
+		}
+		.team-mascot {
+			display: none;
+		}
+		.main {
+			padding: 0;
+		}
+		.menu {
+			text-align: center;
+		}
+		.products > a {
+    		margin: calc(4vw + -11px) 0;
+		}
 	}
 
 </style>
