@@ -306,5 +306,8 @@ pre a:link {
   .team {
     justify-content: center;
   }
-
+  .doublelist {
+    float: none;
+    margin-right: 0;
+  }
 }
