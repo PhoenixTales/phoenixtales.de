@@ -242,8 +242,7 @@ pre a:link {
   .encrypt {
       font-size: 13px;
   }
-  .encrypt > a:link {
-      color: #fff; 
+  .encrypt > a:link { 
       border-bottom: 0px solid #000;
   }
 
