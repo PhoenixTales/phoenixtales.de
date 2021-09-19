@@ -271,6 +271,11 @@ pre a:link {
     top: 0;
     /*display: none;*/
   }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main > img {
     padding: 0;
     max-width: 100vw;
@@ -292,6 +297,10 @@ pre a:link {
   }
   .products > a {
     margin: calc(4vw + -11px) calc(5vw - 20px);
+  }
+
+  .projects li {
+    float: none;
   }
 
 }
