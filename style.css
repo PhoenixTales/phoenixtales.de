@@ -337,6 +337,11 @@ pre a:link {
     top: 0;
     /*display: none;*/
   }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main > img {
     padding: 0;
     max-width: 100vw;
@@ -360,4 +365,15 @@ pre a:link {
     margin: calc(4vw + -11px) calc(5vw - 20px);
   }
 
+  .projects li {
+    float: none;
+  }
+
+  .team {
+    justify-content: center;
+  }
+  .doublelist {
+    float: none;
+    margin-right: 0;
+  }
 }
