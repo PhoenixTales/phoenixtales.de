@@ -31,15 +31,35 @@ body {
 
       color: #ad9e8a;
       font: 16px monospace;
-      line-height: 1.8;
+      line-height: 1.6;
 }
 .main p {
   max-width: 600px;
 }
 
+/* Remove this and the one below to bring vertical navi back */
+.main > nav > ul > li > a, .main > nav > ul > li > em {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.main > nav > ul > li {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+nav {
+  word-spacing: 0.7em;
+  margin-bottom: 1em;
+}
+
   ul {
       list-style: none;
       padding-left: 0;
+  }
+
+  li {
+    margin: 0;
   }
 
 .team-logo {
@@ -61,21 +81,23 @@ body {
   margin: 0;
 }
 
-  pre {
-      line-height: 1.3;
-  }
-
   h2 {
-    padding-top: 1em;
+    display: inline-block;
+    padding: 0.5em 0;
+    margin-top: 2em;
     font-weight: normal;
-    font-size: 17px;
+    font-size: inherit;
     color: #a23939;
+    border-top: 1px dashed #635e59;
+    border-bottom: 1px dashed #635e59;
   }
 
-  nav {
-    font-size: 25px;
+  h3 {
+    margin: 0 0 1em;
   }
+
   .active {
+    border-bottom: 1px solid #934a46;
     font-weight: normal;
     font-style: normal;
     color: #934a46;
@@ -97,9 +119,8 @@ body {
 */
 
   .about {
-      margin: 2em 0 3em;
-      font-size: 18px;
-      line-height: initial;
+      margin: 0em 0 2em;
+      font-size: 16px;
   }
 
   .team {
@@ -141,7 +162,10 @@ body {
   }
   
   .supporters h3 {
+    color: #5f6e61;
     font-size: inherit;
+    font-weight: normal;
+    text-transform: uppercase;
     margin: 2em 0 1em;
   } 
   
@@ -153,7 +177,38 @@ body {
 .team .web      { background: #8c5f4e; }
 
 
+/* NEWS */
+
+.news {
+  margin-top: -1em;
+}
+
+.news > p {
+  padding: 0.5em 0 1.5em;
+  border-bottom: 1px dashed #635e59;
+}
+
+
 /* PROJECTS */
+
+.hide {
+  display: none;
+}
+
+.archive {
+  max-width: 250px;
+}
+
+.archive:hover + .hide {
+  display: block;
+  color: red;
+}
+
+.nyx {
+  max-width: 150px;
+  margin: -8em 2em 2em;
+  position: absolute;
+}
 
 .projects li {
   float: left;
@@ -162,8 +217,12 @@ body {
   width: 250px;
 }
 
-.projects pre {
-  font-size: 10px;
+.projects a {
+  border-bottom: none;
+}
+
+pre {
+  line-height: 1.3;
 }
 
 pre a:link {
@@ -177,24 +236,28 @@ pre a:link {
 
 /* CONTRIB */
 
-.jobs {
+.jobs p {
   margin: -1em 0;
-}
-
-.job {
   margin: 2em 0;
-  padding: 2em;
-  border: 1px solid #635e59;
-  background: #121212;
+  padding: 1em;
+  border: 1px dashed #635e59;
 }
 
-.job strong {
+.jobs strong {
   color: #5f6e61;
 }
 
-.job:hover {
-  border: 1px solid #a8836b;
+.framed {
+  max-width: initial;
+  margin: 0em 0;
+  border: 1px dashed #635e59;
 }
+
+/* Go Back Link */
+.return {
+  margin: 4em 0 1em;
+}
+
 
 
 /* COLORS */
@@ -239,12 +302,15 @@ pre a:link {
       -o-transition: all 0.3s ease-out;
   }
 
-  .encrypt {
-      font-size: 13px;
+  a img:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-filter: blur(2px);
   }
-  .encrypt > a:link { 
-      border-bottom: 0px solid #000;
-  }
+  
 
 @media (max-width: 900px) {
   :root {
