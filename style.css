@@ -337,9 +337,11 @@ pre a:link {
     top: 0;
     /*display: none;*/
   }
-  .main {
+  
+  nav {
+    margin-top: 2em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .main > img {
@@ -365,15 +367,7 @@ pre a:link {
     margin: calc(4vw + -11px) calc(5vw - 20px);
   }
 
-  .projects li {
-    float: none;
-  }
-
-  .team {
-    justify-content: center;
-  }
   .doublelist {
-    float: none;
-    margin-right: 0;
+    margin-right: 1.5em;
   }
 }
