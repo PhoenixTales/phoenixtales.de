@@ -5,33 +5,45 @@
 :root {
   background: black;
   overflow-y: auto;
-  font-family: monospace;
+  font-family: 'Inconsolata', monospace;
 }
+
 body {
   display: flex;
   flex-direction: row;
   max-width: 100vw;
   overflow-x: hidden;
   justify-content: center;
-  background: url('img/bg.jpg') top left / 40% no-repeat;
+  /* background: url('img/bg.jpg') top left / 40% no-repeat; */
   background-attachment: fixed;
 }
+
+
 .sidebar {
-  width: 400px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  border-right: 2px solid #0e0e0e;
+  /*border-right: 1px dashed #534c41;*/
 }
+  .sidebar a:hover { color: #488c63; }
+
+
+
 .main {
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*max-width: 1200px;*/ /* FN: for store */
   min-width: 400px;
   padding: 0 35px 35px 35px;
+  margin: 0 0 2em;
 
-      color: #ad9e8a;
-      font: 16px monospace;
-      line-height: 1.6;
+  color: #ad9e8a;
+  font: 16px monospace;
+  line-height: 1.6;
 }
 .main p {
   max-width: 600px;
@@ -49,7 +61,7 @@ body {
 }
 
 nav {
-  word-spacing: 0.7em;
+  word-spacing: 0.5em;
   margin-bottom: 1em;
 }
 
@@ -87,17 +99,15 @@ body {
     margin-top: 2em;
     font-weight: normal;
     font-size: inherit;
-    color: #a23939;
-    border-top: 1px dashed #635e59;
-    border-bottom: 1px dashed #635e59;
+    color: #934a46;
   }
 
   h3 {
     margin: 0 0 1em;
+    font-size: inherit;
   }
 
   .active {
-    border-bottom: 1px solid #934a46;
     font-weight: normal;
     font-style: normal;
     color: #934a46;
@@ -119,8 +129,12 @@ body {
 */
 
   .about {
-      margin: 0em 0 2em;
+      margin: 0 0 2em;
       font-size: 16px;
+  }
+
+  .about > a:link {
+    border-bottom: 1px solid #934a46;
   }
 
   .team {
@@ -138,9 +152,7 @@ body {
   .team em {
     border-radius: 5px;
     font-style: normal;
-    padding: 2px 5px;
     font-size: 16px;
-    color: black;
   }
 
   .doublelist {
@@ -199,25 +211,27 @@ body {
   max-width: 250px;
 }
 
-.archive:hover + .hide {
-  display: block;
-  color: red;
-}
-
 .nyx {
-  max-width: 150px;
-  margin: -8em 2em 2em;
-  position: absolute;
+  max-width: 250px;
+  margin: 0 2em 2em;
 }
 
 .projects li {
   float: left;
-  margin: 0px 1em 5em;
+  margin-top: 0;
   padding-right: 0em;
-  width: 250px;
+  width: 240px;
+}
+
+.projects pre {
+  font-size: 10px;
 }
 
 .projects a {
+  border-bottom: none;
+}
+
+nav a {
   border-bottom: none;
 }
 
@@ -227,6 +241,17 @@ pre {
 
 pre a:link {
   border-bottom: none;
+}
+
+.plink {
+  border-bottom: 1px solid #934a46;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.clink {
+  border-bottom: 1px solid #934a46;
+  font-style: normal;
 }
 
 .questions {
@@ -262,8 +287,13 @@ pre a:link {
 
 /* COLORS */
 
-.red { color: #ba6360; }
+.red { color: #934a46; font-style: normal; }
 .green { color: #488c63; font-style: normal; }
+.lake { color: #4f6a59; font-style: normal; }
+.violet { color: #76506c; font-style: normal; }
+.fire { color: #8d5c4a; font-style: normal; }
+.blue { color: #466593; font-style: normal; }
+.silver { color: #7a7a7a; font-style: normal; }
 
 
 .products {
@@ -289,13 +319,12 @@ pre a:link {
   a:link { color: inherit; }
   a:visited { color: inherit; }
   a:active { color: #55504a; }
-  a:hover { color: #f2ad7a; }
+  a:hover { color: #b58a6c; }
 
   a {
       text-decoration: none;
-      border-bottom: 1px solid #934a46;
       color: inherit;
-      outline-offset: 2px;
+      border-bottom: 1px solid #934a46;
       transition: all 0.3s ease-out;
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
@@ -320,7 +349,7 @@ pre a:link {
     flex-direction: column;
     min-width: 320px;
 
-          background: url('img/bg.jpg') top right / 100% no-repeat;
+          /* background: url('img/bg.jpg') top right / 100% no-repeat; */
   }
   .sidebar {
     width: 100%;
@@ -369,5 +398,15 @@ pre a:link {
 
   .doublelist {
     margin-right: 1.5em;
+  }
+
+  .projects li {
+    width: 200px;
+  }
+  .projects pre {
+    font-size: 8px;
+  }
+  .plink {
+    font-size: 14px;
   }
 }
