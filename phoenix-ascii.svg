@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="444" height="900">
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
+
     :root {
-      background: black;
+      background: transparent;
     }
     div {
         white-space: pre;
         display: inline-block;
-        font-size: 7px;
+        font-size: 8px;
         text-align: center;
-        font-family: 'courier new', monospace !important;
+        font-family: 'Ubuntu Mono', monospace;
         text-rendering: optimizeSpeed;
         position: absolute;
         top: 0;
         left: 0;
         user-select: none;
-        text-shadow: 0 0 4px;
     }
 
     .selection-fix {

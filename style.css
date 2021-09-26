@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+    
 * {
   overflow: hidden;
   box-sizing: border-box;
@@ -5,7 +7,11 @@
 :root {
   background: black;
   overflow-y: auto;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+pre {
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 body {
