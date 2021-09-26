@@ -36,6 +36,18 @@ body {
   .sidebar a:hover { color: #488c63; }
 
 
+  .phoenix-mascot {
+    width: 481px; 
+    margin-right: -40px; 
+    cursor: normal; 
+    -webkit-user-drag: none;
+    filter: hue-rotate(0deg) saturate(1);
+    transition: filter 10s;
+  }
+
+  .phoenix-mascot:active {
+    filter: hue-rotate(202deg) saturate(1.5)
+  }
 
 .main {
   display: flex;
