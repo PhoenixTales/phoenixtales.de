@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="424" height="777">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="444" height="777">
 <style>
     :root {
       background: black;
@@ -9,7 +9,7 @@
         display: inline-block;
         font-size: 7px;
         text-align: center;
-        font-family: Ubuntu Mono, monospace !important;
+        font-family: 'courier new', monospace !important;
         text-rendering: optimizeSpeed;
         position: absolute;
         top: 0;
