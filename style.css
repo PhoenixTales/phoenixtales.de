@@ -53,34 +53,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  max-width: 800px;
   /*max-width: 1200px;*/ /* FN: for store */
   min-width: 400px;
   padding: 0 35px 35px 35px;
   margin: 0 0 2em;
 
   color: #ad9e8a;
-  font: 16px monospace;
+  font-size: 16px;
   line-height: 1.6;
 }
+
 .main p {
   max-width: 600px;
+  text-align: left;
 }
 
-/* Remove this and the one below to bring vertical navi back */
+.main img {
+  max-width: 600px;
+  padding: 1em;
+  border: 1px dashed #4b4946;
+}
+
 .main > nav > ul > li > a, .main > nav > ul > li > em {
-  font-size: 16px;
   display: inline-block;
 }
 
 .main > nav > ul > li {
   display: inline-block;
-  margin-top: 32px;
 }
 
 nav {
   word-spacing: 0.5em;
-  margin-bottom: 1em;
+  margin: 32px 0 2em;
 }
 
   ul {
@@ -90,6 +95,7 @@ nav {
 
   li {
     margin: 0;
+    padding: 0;
   }
 
 .team-logo {
@@ -121,8 +127,10 @@ body {
   }
 
   h3 {
-    margin: 0 0 1em;
+    margin: 0 auto;
     font-size: inherit;
+    font-weight: normal;
+    text-align: center;
   }
 
   .active {
@@ -130,6 +138,23 @@ body {
     font-style: normal;
     color: #934a46;
   }
+
+blockquote {
+  max-width: 600px;
+  border-left: 10px solid #934a46;
+  padding-left: 1em;
+}
+
+.blog {
+  min-width: 100%;
+  font-weight: bold;
+}
+
+.chaos-ascii {
+  font-size: 8px;
+  max-width: 600px;
+  
+}
 
 /*
 .menu > a:not(:hover) {
@@ -146,59 +171,25 @@ body {
 }
 */
 
-  .about {
-      margin: 0 0 2em;
-      font-size: 16px;
-  }
-
   .about > a:link {
     border-bottom: 1px solid #934a46;
   }
 
-  .team {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 600px;
-  }
-  
+ 
   .frame {
     margin: 1em 0;
     margin-right: 2em;
     padding-right: 1em;
   }
 
-  .team em {
-    border-radius: 5px;
-    font-style: normal;
-    font-size: 16px;
-  }
 
   .doublelist {
     float: left;
     margin-right: 3.2em;
   }
 
-  .team h2 {
-    margin: 0 0 1em; 
-  }
 
-  .team h4 {
-    font-weight: normal;
-    margin: 0;
-  }
 
-  .supporters {
-    max-width: 600px;
-  }
-  
-  .supporters h3 {
-    color: #5f6e61;
-    font-size: inherit;
-    font-weight: normal;
-    text-transform: uppercase;
-    margin: 2em 0 1em;
-  } 
-  
 .team .founder  { background: #ba6360; }
 .team .coreteam { background: #cca385; }
 .team .music    { background: #855f67; }
@@ -210,14 +201,29 @@ body {
 /* NEWS */
 
 .news {
-  margin-top: -1em;
+  width: 100%;
+  max-height: 200px;
+  margin-top: 0;
+  padding: 1em;
+  font-size: 14px;
+  overflow-y: auto;
+  border: 1px dashed #635e59;
 }
 
-.news > p {
-  padding: 0.5em 0 1.5em;
-  border-bottom: 1px dashed #635e59;
+.news > ul {
+  font-size: 14px;
+  padding: 1em;
 }
 
+ol {
+  max-width: 600px;
+  padding: 0;
+}
+
+.date {
+  font-weight: normal;
+
+}
 
 /* PROJECTS */
 
@@ -227,11 +233,16 @@ body {
 
 .archive {
   max-width: 250px;
+  margin: 0 auto;
 }
 
 .nyx {
   max-width: 250px;
   margin: 0 2em 2em;
+}
+
+.projects {
+  margin-top: 2em;
 }
 
 .projects li {
@@ -242,7 +253,7 @@ body {
 }
 
 .projects pre {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.1em;
 }
 
@@ -262,9 +273,21 @@ pre a:link {
   border-bottom: none;
 }
 
+/* add underline to non-ascii within 
+pre-tag and normalise font-size */
+.projects .no-ascii {
+  border-bottom: 1px solid #934a46;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.no-ascii a:link {
+  border-bottom: 1px solid #934a46;
+}
+
+
 .plink {
   border-bottom: 1px solid #934a46;
-  font-size: 16px;
   font-style: normal;
 }
 
@@ -276,6 +299,11 @@ pre a:link {
 .questions {
   clear: both;
   max-width: 500px;
+}
+
+
+.contact {
+  margin-top: 2em;
 }
 
 /* CONTRIB */
@@ -307,11 +335,11 @@ pre a:link {
 /* COLORS */
 
 .red { color: #934a46; font-style: normal; }
-.green { color: #488c63; font-style: normal; }
+.green { color: #488c63; font-style: normal; font-weight: normal; }
 .lake { color: #4f6a59; font-style: normal; }
 .violet { color: #76506c; font-style: normal; }
 .fire { color: #8d5c4a; font-style: normal; }
-.blue { color: #466593; font-style: normal; }
+.blue { color: #466593; font-style: normal; font-weight: normal; }
 .silver { color: #7a7a7a; font-style: normal; }
 
 
@@ -399,6 +427,7 @@ pre a:link {
     display: block;
     min-width: 100%;
   }
+
   .menu {
     text-align: center;
     max-width: 100%;
@@ -419,13 +448,18 @@ pre a:link {
     margin-right: 1.5em;
   }
 
-  .projects li {
-    width: 200px;
-  }
   .projects pre {
-    font-size: 8px;
-  }
-  .plink {
     font-size: 14px;
   }
+
+  /* navi spacing smaller */
+  nav {
+    word-spacing: 0;
+  }
+
+  /* phoenix smaller */
+  .phoenix-ascii {
+    max-width: 350px;
+  }
+
 }

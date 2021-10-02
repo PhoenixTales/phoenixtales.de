@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Store | PhoenixTales</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<link href="/phoenix.ico" rel="icon"/>
+
+<style>
+	* {
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+	:root {
+		background: black;
+		overflow-y: auto;
+		font-family: monospace;
+	}
+	body {
+		display: flex;
+		flex-direction: row;
+		max-width: 100vw;
+		overflow-x: hidden;
+		justify-content: center;
+	}
+	.sidebar {
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-shrink: 0;
+		border-right: 2px solid #0e0e0e;
+	}
+	.main {
+		max-width: 1200px;
+		min-width: 400px;
+		padding: 0 35px 35px 35px;
+	}
+
+	.team-logo {
+		background: url(/img/logo-hover.png);
+		background-size: cover;
+		height: 230px;
+		width: 310px;
+		position: fixed;
+		top: 51px;
+	}
+
+	.team-mascot {
+		width: 300px;
+		position: fixed;
+		top: 280px;
+	}
+
+	body {
+		margin: 0;
+	}
+
+	.menu > a:not(:hover) {
+		text-decoration: none;
+	}
+
+	.menu > a {
+		color: #a8836b;
+		margin: 0 7px;
+	}
+
+	.menu {
+		padding: 50px 0 25px 25px;
+	}
+
+	.products {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center	;
+	}
+
+	.products > a {
+		flex-grow: 1;
+		margin: 25px;
+		display: flex;
+	}
+
+	.products > a > img {
+		object-fit: cover;
+		flex-grow: 1;
+		height: 300px;
+	}
+
+	@media (max-width: 900px) {
+		:root {
+			overflow-x: auto;
+		}
+		body {
+			flex-direction: column;
+			min-width: 320px;
+		}
+		.sidebar {
+			width: 100%;
+			border: none;
+			position: relative;
+			margin-top: 25px;
+		}
+		.team-logo {
+			position: relative;
+			top: 0;
+		}
+		.team-mascot {
+			display: none;
+		}
+		.main {
+			padding: 0;
+			max-width: 100vw;
+			overflow: hidden;
+			display: block;
+			min-width: 100%;
+		}
+		.menu {
+			text-align: center;
+			max-width: 100%;
+			line-height: 40px;
+			padding: 20px 15px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		.menu > a {
+			margin: 0 20px;
+		}
+		.products > a {
+			margin: calc(4vw + -11px) calc(5vw - 20px);
+		}
+	}
+
+</style>
+
+<div class="sidebar">
+	<div class="team-logo"></div>
+	<img class="team-mascot" src="/img/phoenix-stalker.png">
+</div>
+
+<div class="main">
+	<nav class="menu">
+		<a href="/">Main</a>
+		<a href="/news.html">News</a>
+		<a href="/team.html">Team</a>
+		<a href="/projects.html">Projects</a>
+		<a href="/merch.html">Merch</a>
+		<a href="/contrib.html">Contrib</a>
+	</nav>
+
+	<div class="products">
+		<a href="merch/item1"><img src="/specials/logo/themutt.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/src/vogelausgeschnitten.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/peafowl.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/phoenix2.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/phoenix7.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/phoenix8.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/simurgh2.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/unused/suns.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/used/thefox.jpg"></a>
+		<a href="merch/item1"><img src="/specials/logo/used/thewolf.png"></a>
+		<a href="merch/item1"><img src="/specials/logo/simurgh.jpg"></a>
+	</div>
+</div>
