@@ -1,4 +1,4 @@
-[![website-preview](img/updates/phoenixtales-flosha-design-2021-02-17.png)](https://phoenixtales.de)
+[![website-preview](img/git-preview.jpg)](https://phoenixtales.de)
 
-[phoenixtales.de](https://phoenixtales.de) © 2021 PhoenixTales  
+[phoenixtales.de](https://phoenixtales.de) © 2018-2021 PhoenixTales  
 
