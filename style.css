@@ -36,16 +36,16 @@ body {
   .sidebar a:hover { color: #488c63; }
 
 
-  .phoenix-mascot {
+  .phoenix-ascii {
     width: 481px; 
     margin-right: -40px; 
     cursor: normal; 
     -webkit-user-drag: none;
-    filter: hue-rotate(0deg) saturate(1);
+    filter: hue-rotate(0deg) saturate(1.3);
     transition: filter 10s;
   }
 
-  .phoenix-mascot:active {
+  .phoenix-ascii:active {
     filter: hue-rotate(202deg) saturate(1.5)
   }
 
@@ -396,7 +396,7 @@ pre-tag and normalise font-size */
     flex-direction: column;
     min-width: 320px;
 
-          /* background: url('img/bg.jpg') top right / 100% no-repeat; */
+    /* background: url('img/bg.jpg') top right / 100% no-repeat; */
   }
   .sidebar {
     width: 100%;
@@ -459,7 +459,7 @@ pre-tag and normalise font-size */
 
   /* phoenix smaller */
   .phoenix-ascii {
-    max-width: 350px;
+    max-width: 400px;
   }
 
 }
