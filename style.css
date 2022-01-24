@@ -31,10 +31,8 @@ body {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  /*border-right: 1px dashed #534c41;*/
 }
   .sidebar a:hover { color: #488c63; }
-
 
   .phoenix-ascii {
     width: 481px; 
@@ -65,7 +63,7 @@ body {
 }
 
 .main p {
-  max-width: 600px;
+  max-width: 490px;
   text-align: left;
 }
 
@@ -98,19 +96,12 @@ nav {
     padding: 0;
   }
 
-.team-logo {
-  background: url(img/logo-hover.png);
-  background-size: cover;
-  height: 230px;
-  width: 310px;
-  position: fixed;
-  top: 51px;
-}
-
-.team-mascot {
-  width: 300px;
-  position: fixed;
-  top: 280px;
+.logo {
+  font-size: 8px;
+  text-align: center;
+  text-rendering: optimizeSpeed;
+  color: rgb(186, 99, 96); 
+  line-height: 8px;
 }
 
 body {
@@ -156,38 +147,16 @@ blockquote {
   
 }
 
-/*
-.menu > a:not(:hover) {
-  text-decoration: none;
-}
-
-.menu > a {
-  color: #a8836b;
-  margin: 0 7px;
-}
-
-.menu {
-  padding: 50px 0 25px 25px;
-}
-*/
-
-  .about > a:link {
-    border-bottom: 1px solid #934a46;
-  }
-
- 
   .frame {
     margin: 1em 0;
     margin-right: 2em;
     padding-right: 1em;
   }
 
-
   .doublelist {
     float: left;
     margin-right: 3.2em;
   }
-
 
 
 .team .founder  { background: #ba6360; }
@@ -242,13 +211,12 @@ ol {
 }
 
 .projects {
-  margin-top: 2em;
+  display: flex;
+  margin-top: 0;
 }
 
 .projects li {
-  float: left;
   margin-top: 0;
-  padding-right: 0em;
   width: 240px;
 }
 
@@ -257,11 +225,7 @@ ol {
   line-height: 1.1em;
 }
 
-.projects a {
-  border-bottom: none;
-}
-
-nav a {
+pre a, nav a {
   border-bottom: none;
 }
 
@@ -297,10 +261,8 @@ pre-tag and normalise font-size */
 }
 
 .questions {
-  clear: both;
-  max-width: 500px;
+  max-width: 20px;
 }
-
 
 .contact {
   margin-top: 2em;
@@ -313,16 +275,11 @@ pre-tag and normalise font-size */
   margin: 2em 0;
   padding: 1em;
   border: 1px dashed #635e59;
+  max-width: 490px;
 }
 
 .jobs strong {
   color: #5f6e61;
-}
-
-.framed {
-  max-width: initial;
-  margin: 0em 0;
-  border: 1px dashed #635e59;
 }
 
 /* Go Back Link */
@@ -364,18 +321,20 @@ pre-tag and normalise font-size */
 }
 
   a:link { color: inherit; }
-  a:visited { color: inherit; }
   a:active { color: #55504a; }
   a:hover { color: #b58a6c; }
 
   a {
       text-decoration: none;
       color: inherit;
-      border-bottom: 1px solid #934a46;
       transition: all 0.3s ease-out;
       -webkit-transition: all 0.3s ease-out;
       -moz-transition: all 0.3s ease-out;
       -o-transition: all 0.3s ease-out;
+  }
+
+  .content a, a:visited {
+    border-bottom: 1px solid #934a46;
   }
 
   a img:hover {
@@ -402,18 +361,14 @@ pre-tag and normalise font-size */
     width: 100%;
     border: none;
     position: relative;
-    margin-top: 25px;
+    margin-top: 0;
   }
-  .team-logo {
-    position: relative;
-    top: 0;
+
+  .logo {
+    font-size: 7px;
+    line-height: 7px;
   }
-  .team-mascot {
-    position: relative;
-    top: 0;
-    /*display: none;*/
-  }
-  
+
   nav {
     margin-top: 2em;
     display: flex;
@@ -448,9 +403,13 @@ pre-tag and normalise font-size */
     margin-right: 1.5em;
   }
 
-  .projects pre {
-    font-size: 14px;
+  .projects {
+    margin-top: -2em;
+    flex-direction: column;
   }
+    .archive {
+      margin-bottom: 3em;
+    }
 
   /* navi spacing smaller */
   nav {
@@ -460,6 +419,7 @@ pre-tag and normalise font-size */
   /* phoenix smaller */
   .phoenix-ascii {
     max-width: 400px;
+    margin-top: -3em;
   }
 
 }
