@@ -35,7 +35,6 @@ body {
   .sidebar a:hover { color: #488c63; }
 
   .phoenix-ascii {
-    width: 481px; 
     margin-right: -40px; 
     cursor: normal; 
     -webkit-user-drag: none;
@@ -53,7 +52,6 @@ body {
   align-items: center;
   max-width: 800px;
   /*max-width: 1200px;*/ /* FN: for store */
-  min-width: 400px;
   padding: 0 35px 35px 35px;
   margin: 0 0 2em;
 
