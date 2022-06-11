@@ -453,6 +453,7 @@ pre-tag and normalise font-size */
   /* phoenix smaller */
   .phoenix-ascii {
     max-width: 380px;
+    margin-top: 2em;
     margin-bottom: -2em;
   }
 
