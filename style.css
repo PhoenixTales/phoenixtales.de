@@ -97,8 +97,8 @@ nav {
   font-size: 8px;
   text-align: center;
   text-rendering: optimizeSpeed;
-  /*color: rgb(186, 99, 96);*/
-  color: #a05857;
+  color: rgb(186, 99, 96);
+  /*color: #a05857;*/
   line-height: 8px;
 }
 
