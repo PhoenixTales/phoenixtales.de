@@ -1,0 +1,3 @@
+* Sort them in categories and tags
+* Avallach: Add image descriptions and pic infos in html; together with tags and categories?
+* Flosha: Add our inspiration pictures + infos, sort them into categories and tags too

@@ -32,7 +32,6 @@ body {
   align-items: center;
   flex-shrink: 0;
 }
-  .sidebar a:hover { color: #488c63; }
 
   .phoenix-ascii {
     margin-right: -40px; 
@@ -53,7 +52,7 @@ body {
   max-width: 800px;
   /*max-width: 1200px;*/ /* FN: for store */
   padding: 0 35px 35px 35px;
-  margin: 0 0 2em;
+  margin: 0 0 0em;
 
   color: #ad9e8a;
   font-size: 16px;
@@ -98,9 +97,20 @@ nav {
   font-size: 8px;
   text-align: center;
   text-rendering: optimizeSpeed;
-  color: rgb(186, 99, 96); 
+  /*color: rgb(186, 99, 96);*/
+  color: #a05857;
   line-height: 8px;
 }
+
+  .logo a:hover { color: #1dd588; }
+
+  .logo-desktop {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
 
 body {
   margin: 0;
@@ -164,6 +174,11 @@ blockquote {
 .team .scripts  { background: #ccb9a5; }
 .team .web      { background: #8c5f4e; }
 
+.team img {
+  max-width: 150px;
+  float: left;
+  border: none;
+}
 
 /* NEWS */
 
@@ -345,6 +360,19 @@ pre-tag and normalise font-size */
   }
   
 
+
+  .links {
+    display: flex; 
+    gap: 1.5em;
+  }
+
+  .links a:link { color: #66937e; }
+  .links a:visited { color: #66937e; }
+  .links a:active { color: #4f6766; }
+  .links a:hover { color: #4f6766; }
+
+
+
 @media (max-width: 900px) {
   :root {
     overflow-x: auto;
@@ -366,6 +394,14 @@ pre-tag and normalise font-size */
     font-size: 7px;
     line-height: 7px;
   }
+
+    .logo-desktop {
+      display: none;
+    }
+
+    .logo-mobile {
+      display: block;
+    }
 
   nav {
     margin-top: 2em;
@@ -417,7 +453,7 @@ pre-tag and normalise font-size */
   /* phoenix smaller */
   .phoenix-ascii {
     max-width: 380px;
-    margin-top: -1em;
+    margin-bottom: -2em;
   }
 
 }
