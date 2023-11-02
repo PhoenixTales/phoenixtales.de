@@ -104,14 +104,6 @@ nav {
 
   .logo a:hover { color: #1dd588; }
 
-  .logo-desktop {
-    display: block;
-  }
-
-  .logo-mobile {
-    display: none;
-  }
-
 body {
   margin: 0;
 }
@@ -394,14 +386,6 @@ pre-tag and normalise font-size */
     font-size: 7px;
     line-height: 7px;
   }
-
-    .logo-desktop {
-      display: none;
-    }
-
-    .logo-mobile {
-      display: block;
-    }
 
   nav {
     margin-top: 2em;
