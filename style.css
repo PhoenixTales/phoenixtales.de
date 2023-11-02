@@ -385,6 +385,9 @@ pre-tag and normalise font-size */
   .logo {
     font-size: 7px;
     line-height: 7px;
+
+    margin-top: -1em;
+    margin-left: -1em;
   }
 
   nav {
