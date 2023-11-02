@@ -385,9 +385,6 @@ pre-tag and normalise font-size */
   .logo {
     font-size: 7px;
     line-height: 7px;
-
-    margin-top: -1em;
-    margin-left: -1em;
   }
 
   nav {
@@ -440,8 +437,9 @@ pre-tag and normalise font-size */
   /* phoenix smaller */
   .phoenix-ascii {
     max-width: 380px;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: -2em;
+    margin-left: -1em;
   }
 
 }
