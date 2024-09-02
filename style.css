@@ -8,7 +8,14 @@
   background: black;
   overflow-y: auto;
   font-family: 'Ubuntu Mono', monospace;
+
+  color-scheme: dark;   
+
+  --black: #000;
+  --blood: #844d44;
 }
+
+
 
 pre {
   font-family: 'Ubuntu Mono', monospace;
@@ -24,6 +31,10 @@ body {
   background-attachment: fixed;
 }
 
+::selection {
+  background: var(--blood);
+  color: var(--black);
+}
 
 .sidebar {
   width: 500px;
@@ -341,15 +352,16 @@ pre-tag and normalise font-size */
     border-bottom: 1px solid #934a46;
   }
 
+  /*
   a img:hover {
     opacity: 0.7;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
-    -webkit-filter: blur(2px);
+   -webkit-filter: blur(2px);
   }
-  
+  */
 
 
   .links {
