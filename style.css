@@ -65,9 +65,10 @@ body {
 }
 
 .main img {
-  max-width: 600px;
-  padding: 1em;
-  border: 1px dashed #4b4946;
+  /*max-width: 600px;*/
+ /* padding: 1em;*/
+ /* border: 1px dashed #4b4946; */
+  
 }
 
 .main > nav > ul > li > a, .main > nav > ul > li > em {
@@ -292,8 +293,6 @@ pre-tag and normalise font-size */
   margin: 4em 0 1em;
 }
 
-
-
 /* COLORS */
 
 .red { color: #934a46; font-style: normal; }
@@ -395,7 +394,7 @@ pre-tag and normalise font-size */
   }
   .main > img {
     padding: 0;
-    max-width: 100vw;
+    /*max-width: 100vw;*/
     overflow: hidden;
     display: block;
     min-width: 100%;
