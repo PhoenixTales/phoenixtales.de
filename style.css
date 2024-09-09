@@ -76,6 +76,7 @@ body {
 }
   .since {
     font-size: 13px;
+    color: #705d61;
   }
 
   ul {
@@ -93,7 +94,8 @@ body {
   text-align: center;
   text-rendering: optimizeSpeed;
   color: #1dd588;
-  /*color: #a05857;*/
+  /* color: #1dd588; // hover green */
+  /*color: #a05857; // darker red */
   line-height: 8px;
 }
 
@@ -169,17 +171,12 @@ pre a:link {
 /* add underline to non-ascii within 
 pre-tag and normalise font-size */
 .projects .no-ascii {
-  border-bottom: 1px solid #934a46;
   font-style: normal;
   font-size: 16px;
 }
 
-.no-ascii a:link {
-  border-bottom: 1px solid #934a46;
-}
-
 .clink {
-  border-bottom: 1px solid #934a46;
+  color: #1dd588;
   font-style: normal;
 }
 
@@ -187,6 +184,7 @@ pre-tag and normalise font-size */
 /* COLORS */
 
 .red { color: #934a46; font-style: normal; }
+    .red:hover { color: #1dd588; }
 .green { color: #488c63; font-style: normal; font-weight: normal; }
 .lake { color: #4f6a59; font-style: normal; }
 .violet { color: #76506c; font-style: normal; }
@@ -215,9 +213,9 @@ pre-tag and normalise font-size */
   height: 300px;
 }
 
-  a:link { color: inherit; }
-  a:active { color: #55504a; }
-  a:hover { color: #b58a6c; }
+  a:link { color: #1dd588; }
+  a:active { color: #1dd588; }
+  a:hover { color: #66937e; }
 
   a {
       text-decoration: none;
