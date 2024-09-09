@@ -289,15 +289,21 @@ pre-tag and normalise font-size */
   }
   */
 
+  .web {
+    max-width: 450px;
+    flex-wrap: wrap;
+    display: flex; 
+    padding: 0;
+    justify-content: center;
+  }
+    .web li {
+      padding: 0 0.5em;
+    }
 
   .links {
     display: flex; 
     gap: 2em;
     padding: 0;
-  }
-
-  .links li {
-  
   }
 
   .links a:link { color: #66937e; }
