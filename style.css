@@ -390,4 +390,8 @@ pre-tag and normalise font-size */
     margin-left: -1em;
   }
 
+  .web {
+    display: initial;
+  }
+
 }
