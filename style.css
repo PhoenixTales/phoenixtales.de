@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family: "Gothic Alpha";
+  src: url("img/Gothic_alpha_font.ttf") format("truetype");
+}
+
 :root {
   background: black;
   overflow-y: auto;
@@ -174,8 +179,11 @@ pre-tag and normalise font-size */
   font-style: normal;
   font-size: 16px;
   padding: 0.5em 1em;
-  background: #272525;
-  color: #b9af94;
+  /*background: #272525;*/
+  border: 1px solid #272525;
+  font-family: 'Gothic Alpha';
+  color: var(--blood);
+ 
 }
   .projects .no-ascii:hover {
     background: #a2b669;
