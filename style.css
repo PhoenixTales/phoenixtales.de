@@ -173,10 +173,17 @@ pre-tag and normalise font-size */
 .projects .no-ascii {
   font-style: normal;
   font-size: 16px;
+  padding: 0.5em 1em;
+  background: #272525;
+  color: #b9af94;
 }
+  .projects .no-ascii:hover {
+    background: #a2b669;
+    color: var(--black);
+  }
 
 .clink {
-  color: #1dd588;
+  color: #7dba73;
   font-style: normal;
 }
 
@@ -215,7 +222,7 @@ pre-tag and normalise font-size */
 
   a:link { color: #1dd588; }
   a:active { color: #1dd588; }
-  a:hover { color: #66937e; }
+  a:hover { color: #8f8b72; }
 
   a {
       text-decoration: none;
