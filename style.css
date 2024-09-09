@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-    
+
+@font-face {
+  font-family: "Gothic Alpha";
+  src: url("img/Gothic_alpha_font.ttf") format("truetype");
+}
+
 * {
   overflow: hidden;
   box-sizing: border-box;
-}
-
-@font-face{
-  font-family: "Gothic Alpha";
-  src: url("/img/Gothic_alpha_font.ttf") format("truetype");
 }
 
 :root {
@@ -181,7 +181,7 @@ pre-tag and normalise font-size */
   padding: 0.5em 1em;
   /*background: #272525;*/
   border: 1px solid #272525;
-  font-family: 'Gothic Alpha';
+  font-family: "Gothic Alpha", 'Ubuntu Mono', monospace;
   color: var(--blood);
  
 }
@@ -206,6 +206,7 @@ pre-tag and normalise font-size */
 .fire { color: #8d5c4a; font-style: normal; }
 .blue { color: #466593; font-style: normal; font-weight: normal; }
 .silver { color: #7a7a7a; font-style: normal; }
+.stone { color: #272525; font-style: normal; }
 
 
 .products {
