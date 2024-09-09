@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 @font-face {
+  font-family: "IBM VGA 8x16";
+  src: url("assets/fonts/ibm-vga/ibm-vga-8x16.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  font-size: 16px;
+}
+
+@font-face {
   font-family: "Gothic Alpha";
-  src: url("img/Gothic_alpha_font.ttf") format("truetype");
+  src: url("assets/fonts/Gothic_alpha_font.ttf") format("truetype");
 }
 
 * {
@@ -13,7 +22,7 @@
 :root {
   background: black;
   overflow-y: auto;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "IBM VGA 8x16", 'Ubuntu Mono', monospace;
 
   color-scheme: dark;   
 
@@ -66,8 +75,8 @@ body {
   align-items: center;
   max-width: 800px;
   /*max-width: 1200px;*/ /* FN: for store */
-  padding: 0 35px 35px 35px;
-  margin: 0 0 0em;
+  padding: 3em 35px 35px 35px;
+  margin: 0 0 0;
 
   color: #ad9e8a;
   font-size: 16px;
@@ -78,7 +87,17 @@ body {
   max-width: 490px;
   text-align: left;
   margin: 0;
+  padding: 1em;
+  text-align: center;
 }
+.footer p {
+  padding: 0;
+}
+.footer {
+  margin-top: 2em;
+}
+
+
   .since {
     font-size: 13px;
     color: #705d61;
@@ -112,8 +131,10 @@ body {
 
   h2 {
     display: inline-block;
-    padding: 0.5em 0;
-    margin-top: 2em;
+    text-align: center;
+    letter-spacing: 0.3em;
+    padding: 0;
+    margin: 0;
     font-weight: normal;
     font-size: inherit;
     color: #934a46;
@@ -149,6 +170,7 @@ body {
 .projects {
   display: flex;
   margin-top: 0;
+  margin-bottom: 2em;
 }
 
 .projects li {
@@ -167,6 +189,18 @@ pre a {
 
 .about {
   line-height: 1.3;
+}
+
+.redborder {
+  display: inline-block;
+}
+
+.redborder p {
+  border: 1px solid var(--blood);
+  font-family: "IBM VGA 8x16";
+  padding: 1em;
+  margin-bottom: 2.5em;
+  line-height: 1.2em;
 }
 
 pre a:link {
@@ -193,6 +227,7 @@ pre-tag and normalise font-size */
 .clink {
   color: #7dba73;
   font-style: normal;
+  font-family: 'Ubuntu Mono', monospace, "IBM VGA 8x16";
 }
 
 
@@ -206,7 +241,7 @@ pre-tag and normalise font-size */
 .fire { color: #8d5c4a; font-style: normal; }
 .blue { color: #466593; font-style: normal; font-weight: normal; }
 .silver { color: #7a7a7a; font-style: normal; }
-.stone { color: #272525; font-style: normal; }
+.stone { color: #844d44; font-style: normal; }
 
 
 .products {
@@ -260,8 +295,12 @@ pre-tag and normalise font-size */
 
   .links {
     display: flex; 
-    gap: 1.5em;
-    margin: 2em 0 3em;
+    gap: 2em;
+    padding: 0;
+  }
+
+  .links li {
+  
   }
 
   .links a:link { color: #66937e; }
