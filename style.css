@@ -349,6 +349,10 @@ pre-tag and normalise font-size */
     min-width: 100%;
   }
 
+  .links {
+    display: initial;
+  }
+
   .menu {
     text-align: center;
     max-width: 100%;
