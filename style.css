@@ -195,7 +195,7 @@ pre a {
 }
 
 .redborder p {
-  border: 1px solid var(--blood);
+  border: 1px solid #705d61;
   font-family: "IBM VGA 8x16";
   padding: 1em;
   margin-bottom: 2.5em;
@@ -223,10 +223,17 @@ pre-tag and normalise font-size */
     color: var(--black);
   }
 
-.clink {
+.web li {
+  border: 1px solid #4b4143;
+  padding: 0.2em;
+  margin: 0.2em;
   color: #9ba571;
   font-style: normal;
   font-family: 'Ubuntu Mono', monospace, "IBM VGA 8x16";
+}
+
+.web a:hover {
+  text-decoration: underline;
 }
 
 
@@ -242,6 +249,13 @@ pre-tag and normalise font-size */
 .silver { color: #7a7a7a; font-style: normal; }
 .stone { color: #844d44; font-style: normal; }
 
+.mdk {
+  color: #4b4143;
+}
+
+.mdk:hover {
+  color: #8f8b72;
+}
 
 .products {
   display: flex;
@@ -306,10 +320,10 @@ pre-tag and normalise font-size */
     padding: 0;
   }
 
-  .links a:link { color: #66937e; }
-  .links a:visited { color: #66937e; }
-  .links a:active { color: #4f6766; }
-  .links a:hover { color: #4f6766; }
+  .links a:hover {
+    text-decoration: underline;
+  }
+ 
 
 
 
