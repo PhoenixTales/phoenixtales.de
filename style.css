@@ -206,6 +206,13 @@ pre a:link {
   border-bottom: none;
 }
 
+.projects pre {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+
 /* add underline to non-ascii within 
 pre-tag and normalise font-size */
 .projects .no-ascii {
