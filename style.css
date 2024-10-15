@@ -44,7 +44,7 @@ body {
 }
 
 ::selection {
-  background: var(--blood);
+  background: #9cad76;
   color: var(--black);
 }
 
@@ -54,6 +54,10 @@ body {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
+
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
   .phoenix-ascii {
@@ -116,7 +120,7 @@ body {
   font-size: 8px;
   text-align: center;
   text-rendering: optimizeSpeed;
-  color: #9cad76; /* mdk green, less flashy */
+  color: #9cad76; /* desaturated green */
   /* color: #1dd588; // hover green */
   /*color: #a05857; // darker red */
   line-height: 8px;
@@ -138,6 +142,9 @@ body {
     font-size: inherit;
     color: #934a46;
   }
+    h2:hover {
+      color: #9cad76;
+    }
 
   h3 {
     margin: 0 auto;
@@ -223,10 +230,14 @@ pre-tag and normalise font-size */
   border: 1px solid #272525;
   font-family: "Gothic Alpha", 'Ubuntu Mono', monospace;
   color: var(--blood);
- 
+
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
 }
   .projects .no-ascii:hover {
-    background: #a2b669;
+    background: #88966a;
     color: var(--black);
   }
 
@@ -248,6 +259,7 @@ pre-tag and normalise font-size */
 
 .red { color: #934a46; font-style: normal; }
     .red:hover { color: #1dd588; }
+    
 .green { color: #488c63; font-style: normal; font-weight: normal; }
 .lake { color: #4f6a59; font-style: normal; }
 .violet { color: #76506c; font-style: normal; }
@@ -257,11 +269,15 @@ pre-tag and normalise font-size */
 .stone { color: #844d44; font-style: normal; }
 
 .mdk {
-  color: #4b4143;
+  color: #797663;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
 }
 
 .mdk:hover {
-  color: #8f8b72;
+  color: #4b4143;
 }
 
 .products {
