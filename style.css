@@ -116,7 +116,7 @@ body {
   font-size: 8px;
   text-align: center;
   text-rendering: optimizeSpeed;
-  color: #1dd588;
+  color: #9cad76; /* mdk green, less flashy */
   /* color: #1dd588; // hover green */
   /*color: #a05857; // darker red */
   line-height: 8px;
@@ -224,7 +224,7 @@ pre-tag and normalise font-size */
   }
 
 .clink {
-  color: #7dba73;
+  color: #9ba571;
   font-style: normal;
   font-family: 'Ubuntu Mono', monospace, "IBM VGA 8x16";
 }
